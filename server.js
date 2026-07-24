@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 // read a message from the environment
 const APP_MESSAGE =
-    process.env.APP_MESSAGE || "Welcome to Hira's Dashboard API!";
+    process.env.APP_MESSAGE || "Welcome to Hira's Dashboard API";
 
 // temporary activity data
 let items = [
@@ -74,5 +74,5 @@ app.post("/api/items", function(req, res) {
 
 // start the server
 app.listen(PORT, function() {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
