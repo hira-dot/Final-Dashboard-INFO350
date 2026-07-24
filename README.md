@@ -1,6 +1,6 @@
 # Final Personal Dashboard
 
-## Project Overview
+## Overview
 This project is a full-stack personal dashboard built using HTML, CSS, JavaScript, Node.js, and Express.js. The application allows users to view and save activities through a REST API while demonstrating Express integration and cloud deployment.
 
 ## Features
