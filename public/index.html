@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <!-- title, link to css file-->
+    <head>
+        <title>My Personal Webpage</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+
+<!-- main heading -->
+<h1>Hira Shakeel</h1>
+
+<!-- paragraph description -->
+<p>
+    I'm excited to take this class because one of my goals this summer is to become a stronger and more confident programmer. I am interested in web design and as an artist I would love to create a website in the future displaying my work.
+</p>
+
+<!-- image displaying art -->
+<img src="IMG_1522.jpg" alt="Example of my art">
+
+<!-- link to favorite website -->
+<a href="https://www.pinterest.com/" target="_blank">My Favorite Website</a>
+
+<!-- link to email -->
+<p>
+    <a href="mailto:shakeelh2@vcu.edu">My Email</a>
+</p>
+
+<!-- list of hobbies -->
+<h2>My Top 3 Hobbies</h2>
+
+<ul>
+    <li>Drawing</li>
+    <li>Gaming</li>
+    <li>Playing my Violin</li>
+</ul>
+
+<!-- email update form -->
+<h2>Update Email</h2>
+
+<input id="emailInput" type="email" placeholder="Enter email">
+<button onclick="updateEmail()">Update</button>
+
+<p id="message"></p>
+
+<!-- activity log -->
+<h2>Activity Log</h2>
+
+<ul id="activityList"></ul>
+
+<!-- Express activity form -->
+<h2>Add a New Activity</h2>
+
+<input
+    id="activityInput"
+    type="text"
+    placeholder="Enter an activity"
+>
+
+<input
+    id="dateInput"
+    type="date"
+>
+
+<button id="saveActivityButton">
+    Save Activity
+</button>
+
+<p id="activityMessage"></p>
+
+<h2>Activities from Express API</h2>
+
+<button id="loadActivitiesButton">
+    Load Activities
+</button>
+
+<div id="apiActivityList"></div>
+
+
+
+
+<!-- fetched user data -->
+<h2>Fetched User Data</h2>
+
+<button id="loadUsersButton" onclick="getUsers()">
+    View All Users
+</button>
+
+<button id="clearUsersButton" onclick="clearUsers()">
+    Clear Users
+</button>
+
+<p id="userMessage"></p>
+
+<div id="userDisplay"></div>
+
+
+
+<!-- dark mode button -->
+<button onclick="darkMode()">Toggle Dark Mode</button>
+
+<!-- linking to js file -->
+<script src="script.js"></script>
+script
+</body>
+</html>

@@ -1,0 +1,166 @@
+
+/* bg color */
+body {
+    background-color: rgb(255, 0, 136);
+    font-family: Courier, sans-serif;
+    margin: 25px;
+
+}
+
+/* header style */
+h1{
+    color: aquamarine;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* paragraph style */
+p{
+    color: rgb(156, 191, 255);
+    font-size: 15px;
+    text-align: center;
+
+}
+
+/* image style */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+    
+
+}
+/* heading 2 styling */
+h2{
+    color:rgb(156, 191, 255);
+    text-align: center;
+    text-decoration:none;
+}
+ /* hyperlink styling */
+    a{
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+        color:aquamarine
+
+    }
+/* list styling */
+ul{
+    color:rgb(156, 191, 255);
+    text-align: center;
+    list-style-position: inside;
+    padding: 0;
+} 
+
+/* change bg color via button */
+.dark {
+    background-color: black;
+    
+}
+/* center the email input and button */
+#emailInput {
+    display: block;
+    margin: 0 auto 10px auto;
+    padding: 8px;
+    width: 250px;
+    text-align: center;
+}
+/*format email and dark mode button */
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 16px;
+    background-color: aquamarine;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(102, 255, 204);
+}
+
+/* fetched user container */
+#userDisplay {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* fetched user cards */
+.user-card {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+/* user card hover effect */
+.user-card:hover {
+    transform: translateY(-5px);
+}
+/* paragraph text inside user cards */
+.user-card p {
+    color: black;
+    text-align: left;
+}
+/* additional user details hidden by default */
+.user-details {
+    display: none;
+}
+/* display additional user details */
+.show-details {
+    display: block;
+}
+/* spacing between fetched data buttons */
+#loadUsersButton,
+#clearUsersButton {
+    margin-bottom: 10px;
+}
+/* loading, success, or error message */
+#userMessage {
+    font-weight: bold;
+    text-align: center;
+}
+/* Express activity inputs */
+#activityInput,
+#dateInput {
+    display: block;
+    width: 250px;
+    padding: 8px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+
+/* Express activity container */
+#apiActivityList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* Express activity cards */
+.activity-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+/* activity card hover effect */
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-card h3,
+.activity-card p {
+    color: black;
+}
+
+#activityMessage {
+    font-weight: bold;
+    text-align: center;
+}
